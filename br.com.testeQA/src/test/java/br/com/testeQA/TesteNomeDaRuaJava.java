@@ -12,14 +12,13 @@ public class TesteNomeDaRuaJava {
 	
 	public static void main(String[] args) {
 		Response response = RestAssured.request(Method.GET, "https://api.zippopotam.us/BR/01000-000	");
-		System.out.println(response.getBody().asString());
-		//response.prettyPrint();
+		response.prettyPrint();
 		JsonPath extractor = response.jsonPath();
-		String rua = extractor.get("country");
+		String pais = extractor.get("country");
 		
-		System.out.println(rua);
+		System.out.println(pais);
 		
-	Assert.assertEquals(rua, "Brazil");
+	Assert.assertEquals(pais, "Brazil");
 }
 
 }

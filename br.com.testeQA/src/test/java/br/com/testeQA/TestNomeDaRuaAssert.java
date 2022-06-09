@@ -15,8 +15,8 @@ public class TestNomeDaRuaAssert {
 	}
 	@Test
 	public void testNomeDaRuaAssert() {
-		String rua = 
-				given()
+		String estado = 
+		given()
 			.log().all()
 		.when()
 			.get("/br/01000-000")
@@ -24,7 +24,7 @@ public class TestNomeDaRuaAssert {
 			.statusCode(200)
 			.extract().path("places[0].'place name'")
 			;
-		Assert.assertEquals("São Paulo", rua);
-		System.out.println(rua);
+		Assert.assertEquals("São Paulo", estado);
+		System.out.println(estado);
 	}
 }
