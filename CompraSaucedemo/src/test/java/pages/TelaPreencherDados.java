@@ -10,7 +10,7 @@ public class TelaPreencherDados {
     }
     public void dados(){
         navegador.findElement(By.xpath("//input[@id='first-name']")).sendKeys("Estudo");
-        navegador.findElement(By.xpath("//input[@id='last-name']")).sendKeys("AutomaÃ§Ã£o 2022");
+        navegador.findElement(By.xpath("//input[@id='last-name']")).sendKeys("Automação 2022");
         navegador.findElement(By.xpath("//input[@id='postal-code']")).sendKeys("04455-130");
         navegador.findElement(By.xpath("//input[@id='continue']")).click();
 

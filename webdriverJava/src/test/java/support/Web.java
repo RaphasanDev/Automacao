@@ -11,13 +11,13 @@ public class Web {
 	public static WebDriver createChrome() {
 		// Abrindo Navegador
 
-		System.setProperty("webdriver.chrome.driver", "/us.zippotatam.api/src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raphael San\\Documents\\Programação\\Automacao\\drivers\\chromedriver.exe");
 		WebDriver navegador = new ChromeDriver();
 		navegador.manage().window().maximize();
 		navegador.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-		// Navegando para a pÃ¡gina do TaskIt
-		navegador.get("https://api.zippopotam.us/");
+		// Navegando para a página do TaskIt
+		navegador.get("http://www.juliodelima.com.br/taskit");
 
 		return navegador;
 	}

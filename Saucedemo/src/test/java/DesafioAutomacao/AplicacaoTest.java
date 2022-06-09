@@ -8,7 +8,7 @@ public class AplicacaoTest {
 
 	@Before
 	public void before() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sempre IT\\Documents\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raphael San\\Documents\\Programação\\Automacao\\drivers\\chromedriver.exe");
 	}
 
 	@Test

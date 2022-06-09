@@ -5,6 +5,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.*;
@@ -22,7 +23,7 @@ public class PassosDefinidos {
     private ValidarCompra validarCompra;
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sempre IT\\Documents\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raphael San\\Documents\\Programação\\Automacao\\drivers\\chromedriver.exe");
         navegador = new ChromeDriver();
         navegador.manage().window().maximize();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -66,6 +67,10 @@ public class PassosDefinidos {
     public void valido_se_a_compra_foi_efetuada_com_sucesso() {
         validarCompra = new ValidarCompra(navegador);
         validarCompra.validar();
-
+    		// Fechar o Navegador
+    		navegador.quit();
+    		}
     }
-}
+    
+    
+

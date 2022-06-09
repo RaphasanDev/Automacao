@@ -35,7 +35,7 @@ public class InformacoesUsuarioTestv3 {
 	@Before
 	public void setUp() {
 		// Abrindo Navegador
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sempre IT\\Documents\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Raphael San\\Documents\\Programação\\Automacao\\drivers\\chromedriver.exe");
 		navegador = new ChromeDriver();
 		navegador.manage().window().maximize();
 		navegador.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
